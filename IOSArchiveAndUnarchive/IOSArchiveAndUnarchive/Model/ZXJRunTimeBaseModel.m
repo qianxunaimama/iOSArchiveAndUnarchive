@@ -11,7 +11,7 @@
 
 @implementation ZXJRunTimeBaseModel
 
-+ (NSString *)getThefilePath
++ (NSString *)getTheFilePath
 {
     NSString *selfClassName = NSStringFromClass([self class]);
     NSString *Path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
@@ -46,17 +46,15 @@
 #pragma mark - Instance object method
 - (BOOL)synchronize
 {
-    NSString *savePath =  [[self class] getThefilePath];
-    BOOL synchronize =  [NSKeyedArchiver archiveRootObject:self toFile: savePath];
-    if (synchronize) {
+    NSString *savePath =  [[self class] getTheFilePath];
+    BOOL synchronized =  [NSKeyedArchiver archiveRootObject:self toFile: savePath];
+    if (synchronized) {
         NSLog(@"save done");
-//        ZLogGreen(@"save done %@",savePath);
-//        ZLogLightYellow(@"synchronize data: %@",self.description);
+        
     }else{
         NSLog(@"save fail");
-//        ZLogRed(@"save fail %@",savePath);
     }
-    return synchronize;
+    return synchronized;
 }
 
 

@@ -45,6 +45,11 @@
     ZXJUserModel *user = [ZXJUserModel sharedInstance];
     user.userName = @"ZXJ";
     user.userAge  = 100;
+    if ([user synchronize]) {
+        NSLog(@"归档成功");
+    }else{
+        NSLog(@"归档失败");
+    }
 }
 
 - (void)readData{
@@ -52,7 +57,6 @@
     ZXJUserModel *user = [ZXJUserModel sharedInstance];
     NSString *path = [ZXJUserModel getTheFilePath];
     user = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
-    NSLog(@"Path is %@",path);
     NSLog(@"user  is  %@",user);
 }
 
