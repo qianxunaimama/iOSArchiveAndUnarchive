@@ -19,6 +19,8 @@
 		DF07621A1E5C1A72006F3E4D /* ZXJStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0762191E5C1A72006F3E4D /* ZXJStudent.m */; };
 		DF0762201E5C1D56006F3E4D /* ZXJRunTimeBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF07621F1E5C1D56006F3E4D /* ZXJRunTimeBaseModel.m */; };
 		DF0762261E5D15F4006F3E4D /* ZXJUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0762251E5D15F4006F3E4D /* ZXJUserModel.m */; };
+		DF0762291E5FD406006F3E4D /* ZXJRunTimeBaseModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0762281E5FD406006F3E4D /* ZXJRunTimeBaseModelOne.m */; };
+		DF07622C1E5FD85C006F3E4D /* ZXJUserModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = DF07622B1E5FD85C006F3E4D /* ZXJUserModelOne.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		DF07621F1E5C1D56006F3E4D /* ZXJRunTimeBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJRunTimeBaseModel.m; sourceTree = "<group>"; };
 		DF0762241E5D15F4006F3E4D /* ZXJUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJUserModel.h; sourceTree = "<group>"; };
 		DF0762251E5D15F4006F3E4D /* ZXJUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJUserModel.m; sourceTree = "<group>"; };
+		DF0762271E5FD406006F3E4D /* ZXJRunTimeBaseModelOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJRunTimeBaseModelOne.h; sourceTree = "<group>"; };
+		DF0762281E5FD406006F3E4D /* ZXJRunTimeBaseModelOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJRunTimeBaseModelOne.m; sourceTree = "<group>"; };
+		DF07622A1E5FD85C006F3E4D /* ZXJUserModelOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJUserModelOne.h; sourceTree = "<group>"; };
+		DF07622B1E5FD85C006F3E4D /* ZXJUserModelOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJUserModelOne.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,14 +169,9 @@
 		DF0762131E5BF08E006F3E4D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DF0762151E5C0DBB006F3E4D /* ZXJPerson.h */,
-				DF0762161E5C0DBB006F3E4D /* ZXJPerson.m */,
-				DF0762181E5C1A72006F3E4D /* ZXJStudent.h */,
-				DF0762191E5C1A72006F3E4D /* ZXJStudent.m */,
-				DF07621E1E5C1D56006F3E4D /* ZXJRunTimeBaseModel.h */,
-				DF07621F1E5C1D56006F3E4D /* ZXJRunTimeBaseModel.m */,
-				DF0762241E5D15F4006F3E4D /* ZXJUserModel.h */,
-				DF0762251E5D15F4006F3E4D /* ZXJUserModel.m */,
+				DF07622F1E600FBC006F3E4D /* ModelRunTimeBaseOne */,
+				DF07622E1E600F53006F3E4D /* ModelRunTimeBaseZero */,
+				DF07622D1E600F37006F3E4D /* ModelPerson */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +183,39 @@
 				DF0761E61E5BE8B1006F3E4D /* ViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		DF07622D1E600F37006F3E4D /* ModelPerson */ = {
+			isa = PBXGroup;
+			children = (
+				DF0762151E5C0DBB006F3E4D /* ZXJPerson.h */,
+				DF0762161E5C0DBB006F3E4D /* ZXJPerson.m */,
+				DF0762181E5C1A72006F3E4D /* ZXJStudent.h */,
+				DF0762191E5C1A72006F3E4D /* ZXJStudent.m */,
+			);
+			name = ModelPerson;
+			sourceTree = "<group>";
+		};
+		DF07622E1E600F53006F3E4D /* ModelRunTimeBaseZero */ = {
+			isa = PBXGroup;
+			children = (
+				DF07621E1E5C1D56006F3E4D /* ZXJRunTimeBaseModel.h */,
+				DF07621F1E5C1D56006F3E4D /* ZXJRunTimeBaseModel.m */,
+				DF0762241E5D15F4006F3E4D /* ZXJUserModel.h */,
+				DF0762251E5D15F4006F3E4D /* ZXJUserModel.m */,
+			);
+			name = ModelRunTimeBaseZero;
+			sourceTree = "<group>";
+		};
+		DF07622F1E600FBC006F3E4D /* ModelRunTimeBaseOne */ = {
+			isa = PBXGroup;
+			children = (
+				DF0762271E5FD406006F3E4D /* ZXJRunTimeBaseModelOne.h */,
+				DF0762281E5FD406006F3E4D /* ZXJRunTimeBaseModelOne.m */,
+				DF07622A1E5FD85C006F3E4D /* ZXJUserModelOne.h */,
+				DF07622B1E5FD85C006F3E4D /* ZXJUserModelOne.m */,
+			);
+			name = ModelRunTimeBaseOne;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,7 +352,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF0762261E5D15F4006F3E4D /* ZXJUserModel.m in Sources */,
+				DF0762291E5FD406006F3E4D /* ZXJRunTimeBaseModelOne.m in Sources */,
 				DF0761E71E5BE8B1006F3E4D /* ViewController.m in Sources */,
+				DF07622C1E5FD85C006F3E4D /* ZXJUserModelOne.m in Sources */,
 				DF0762171E5C0DBB006F3E4D /* ZXJPerson.m in Sources */,
 				DF0761E41E5BE8B1006F3E4D /* AppDelegate.m in Sources */,
 				DF0761E11E5BE8B1006F3E4D /* main.m in Sources */,
@@ -553,6 +589,7 @@
 				DF07620B1E5BE8B2006F3E4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF07620C1E5BE8B2006F3E4D /* Build configuration list for PBXNativeTarget "IOSArchiveAndUnarchiveTests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +598,7 @@
 				DF07620E1E5BE8B2006F3E4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF07620F1E5BE8B2006F3E4D /* Build configuration list for PBXNativeTarget "IOSArchiveAndUnarchiveUITests" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +607,7 @@
 				DF0762111E5BE8B2006F3E4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

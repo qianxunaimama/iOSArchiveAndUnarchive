@@ -10,6 +10,7 @@
 #import "ZXJPerson.h"
 #import "ZXJStudent.h"
 #import "ZXJUserModel.h"
+#import "ZXJUserModelOne.h"
 
 
 @interface ViewController ()
@@ -38,27 +39,52 @@
     [self.view addSubview:readBtn];
 }
 
-
-#pragma mark - runTime的归解档
+#pragma mark - runTime写法1的归档
 - (void)writeData{
-
-    ZXJUserModel *user = [ZXJUserModel sharedInstance];
-    user.userName = @"ZXJ";
-    user.userAge  = 100;
-    if ([user synchronize]) {
-        NSLog(@"归档成功");
+    
+    ZXJUserModelOne *userOne = [ZXJUserModelOne sharedModelOne];
+    userOne.name = @"zxj";
+    userOne.age  = 100;
+    if ([userOne saveUserInfo]) {
+        NSLog(@"保存成功");
     }else{
-        NSLog(@"归档失败");
+        NSLog(@"保存失败");
     }
+    
 }
 
+#pragma mark - runTime写法1的解档
 - (void)readData{
-
-    ZXJUserModel *user = [ZXJUserModel sharedInstance];
-    NSString *path = [ZXJUserModel getTheFilePath];
-    user = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
-    NSLog(@"user  is  %@",user);
+    
+    ZXJUserModelOne *userOne = [ZXJUserModelOne sharedModelOne];
+    
+    userOne = [userOne getUserInfo];
+    
+    NSLog(@"get data is %@",userOne);
+    
+//    NSLog(@"get data  is  %@ -- %ld",userOne.name,userOne.age);
 }
+
+//#pragma mark - runTime的归解档(写法有问题)
+//- (void)writeData{
+//
+//    ZXJUserModel *user = [ZXJUserModel sharedInstance];
+//    user.userName = @"ZXJ";
+//    user.userAge  = 100;
+//    if ([user synchronize]) {
+//        NSLog(@"归档成功");
+//    }else{
+//        NSLog(@"归档失败");
+//    }
+//}
+//
+//- (void)readData{
+//
+//    ZXJUserModel *user = [ZXJUserModel sharedInstance];
+//    NSString *path = [ZXJUserModel getTheFilePath];
+//    user = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+//    NSLog(@"user  is  %@",user);
+//}
 
 //#pragma mark - 儿子的归解档
 //- (void)writeData{
