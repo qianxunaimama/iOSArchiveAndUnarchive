@@ -97,6 +97,32 @@
     return user;
 }
 
+
+- (void)clearUserInfo{
+    
+    unsigned int count = 0;
+    
+    // 获取类中所有成员变量名
+    Ivar *ivar = class_copyIvarList([self class], &count);
+    for (int i = 0; i < count; i++) {
+        
+        Ivar ivarItem = ivar[i];
+        
+        const char *name = ivar_getName(ivarItem);
+        
+        NSString *key = [NSString stringWithUTF8String:name];
+        
+        id value = @"";
+        
+        // 利用KVC对属性进行赋值
+        [self setValue:value forKey:key];
+        
+    }
+    free(ivar);
+    
+    [self saveUserInfo];
+}
+
 -(NSString *)description{
 
     NSMutableString *descriptionString = [NSMutableString stringWithFormat:@"\n-------\n%@\n",[self class]];
@@ -114,7 +140,7 @@
         
         NSString *value = [self valueForKey:key];
         
-        NSString *keyAndValue = [NSString stringWithFormat:@"%@ - %@\n",key,value];
+        NSString *keyAndValue = [NSString stringWithFormat:@"%@ ： %@\n",key,value];
        
         [descriptionString appendString:keyAndValue];
     

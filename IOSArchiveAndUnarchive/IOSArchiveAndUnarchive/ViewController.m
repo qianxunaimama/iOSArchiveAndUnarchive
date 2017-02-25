@@ -62,6 +62,10 @@
     
     NSLog(@"get data is %@",userOne);
     
+    [userOne clearUserInfo];
+    
+    NSLog(@"after clear is %@",userOne);
+    
 //    NSLog(@"get data  is  %@ -- %ld",userOne.name,userOne.age);
 }
 

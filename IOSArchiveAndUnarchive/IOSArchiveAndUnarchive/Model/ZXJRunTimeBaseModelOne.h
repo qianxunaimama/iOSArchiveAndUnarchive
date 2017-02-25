@@ -14,4 +14,7 @@
 
 - (id)getUserInfo;
 
+- (void)clearUserInfo;
+
 @end
+
