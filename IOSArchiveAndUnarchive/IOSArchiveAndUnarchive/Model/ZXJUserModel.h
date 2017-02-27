@@ -12,7 +12,7 @@
 
 @property (nonatomic,strong) NSString *userName;
 
-@property (nonatomic,assign) NSInteger userAge;
+@property (nonatomic,strong) NSNumber *userAge;
 
 + (instancetype)sharedInstance;
 

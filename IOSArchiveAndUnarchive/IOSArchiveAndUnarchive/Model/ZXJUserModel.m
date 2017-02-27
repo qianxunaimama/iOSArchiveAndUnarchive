@@ -29,18 +29,18 @@ static ZXJUserModel *instance = nil;
     return _instance;
 }
 
-- (instancetype)init{
-    
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        NSString *path = [[self class] getTheFilePath];
-        NSLog(@"path is %@",path);
-        instance = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
-        if (instance ==  nil) {
-            instance = [super init];
-        }
-       
-    });
-    return instance;
-}
+//- (instancetype)init{
+//    
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        NSString *path = [[self class] getTheFilePath];
+//        NSLog(@"path is %@",path);
+//        instance = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+//        if (instance ==  nil) {
+//            instance = [super init];
+//        }
+//       
+//    });
+//    return instance;
+//}
 @end

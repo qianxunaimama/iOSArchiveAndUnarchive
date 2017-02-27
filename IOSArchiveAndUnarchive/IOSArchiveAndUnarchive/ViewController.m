@@ -74,7 +74,7 @@
 
     ZXJUserModel *user = [ZXJUserModel sharedInstance];
     user.userName = @"ZXJ";
-    user.userAge  = 100;
+    user.userAge  = @100;
     if ([user synchronize]) {
         NSLog(@"归档成功");
     }else{

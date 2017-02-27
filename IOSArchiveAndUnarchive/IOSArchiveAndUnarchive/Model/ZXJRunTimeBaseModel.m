@@ -78,27 +78,47 @@
 }
 
 #pragma mark - 解档
+// 解档
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder{
+    // 取得所有成员变量名
+    NSArray *properNames = [[self class] propertyOfSelf];
     
-    //取得所有成员变量名
-    NSArray *propertyNames = [[self class] propertyOfSelf];
-    
-    for (NSString *propertyName in propertyNames) {
-        
+    for (NSString *propertyName in properNames) {
         // 创建指向属性的set方法
         // 1.获取属性名的第一个字符，变为大写字母
-        NSString *firstCharacter = [propertyNames objectAtIndexedSubscript:1];
-        
+        NSString *firstCharater = [propertyName substringToIndex:1].uppercaseString;
         // 2.替换掉属性名的第一个字符为大写字符，并拼接出set方法的方法名
-        NSString *setPropertyName = [NSString stringWithFormat:@"set%@%@",firstCharacter,[propertyName substringFromIndex:1]];
+        NSString *setPropertyName = [NSString stringWithFormat:@"set%@%@:",firstCharater,[propertyName substringFromIndex:1]];
         SEL setSel = NSSelectorFromString(setPropertyName);
         
-        IMP imp = [self methodForSelector:setSel];
-        void (*func)(id,SEL,id) = (void *)imp;
-        func(self,setSel,[aDecoder decodeObjectForKey:propertyName]);
+//        IMP imp = [self methodForSelector: setSel];
+        void (*func)(id, SEL, id) = (void *)[self methodForSelector: setSel];
+        func(self, setSel, [aDecoder decodeObjectForKey:propertyName]);
     }
-    return self;
+    return  self;
+    
 }
+//- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder{
+//    
+//    //取得所有成员变量名
+//    NSArray *propertyNames = [[self class] propertyOfSelf];
+//    
+//    for (NSString *propertyName in propertyNames) {
+//        
+//        // 创建指向属性的set方法
+//        // 1.获取属性名的第一个字符，变为大写字母
+//        NSString *firstCharacter = [propertyName substringFromIndex:1].uppercaseString;
+//        
+//        // 2.替换掉属性名的第一个字符为大写字符，并拼接出set方法的方法名
+//        NSString *setPropertyName = [NSString stringWithFormat:@"set%@%@",firstCharacter,[propertyName substringFromIndex:1]];
+//        SEL setSel = NSSelectorFromString(setPropertyName);
+//        
+//        IMP imp = [self methodForSelector:setSel];
+//        void (*func)(id,SEL,id) = (void *)imp;
+//        func(self,setSel,[aDecoder decodeObjectForKey:propertyName]);
+//    }
+//    return self;
+//}
 
 #pragma mark - description
 - (NSString *)description{
