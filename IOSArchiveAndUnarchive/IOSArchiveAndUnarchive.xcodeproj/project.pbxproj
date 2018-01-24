@@ -14,13 +14,15 @@
 		DF0761EF1E5BE8B1006F3E4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0761ED1E5BE8B1006F3E4D /* LaunchScreen.storyboard */; };
 		DF0761FA1E5BE8B2006F3E4D /* IOSArchiveAndUnarchiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0761F91E5BE8B2006F3E4D /* IOSArchiveAndUnarchiveTests.m */; };
 		DF0762051E5BE8B2006F3E4D /* IOSArchiveAndUnarchiveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0762041E5BE8B2006F3E4D /* IOSArchiveAndUnarchiveUITests.m */; };
-		DF0762171E5C0DBB006F3E4D /* ZXJPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0762161E5C0DBB006F3E4D /* ZXJPerson.m */; };
-		DF07621A1E5C1A72006F3E4D /* ZXJStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0762191E5C1A72006F3E4D /* ZXJStudent.m */; };
-		DF0762201E5C1D56006F3E4D /* ZXJRunTimeBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF07621F1E5C1D56006F3E4D /* ZXJRunTimeBaseModel.m */; };
-		DF0762261E5D15F4006F3E4D /* ZXJUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0762251E5D15F4006F3E4D /* ZXJUserModel.m */; };
-		DF0762291E5FD406006F3E4D /* ZXJRunTimeBaseModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0762281E5FD406006F3E4D /* ZXJRunTimeBaseModelOne.m */; };
-		DF07622C1E5FD85C006F3E4D /* ZXJUserModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = DF07622B1E5FD85C006F3E4D /* ZXJUserModelOne.m */; };
 		DF0762351E61B52B006F3E4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0762341E61B52B006F3E4D /* ViewController.m */; };
+		DF6FC7C020182863008CDFA0 /* ZXJStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6FC7B220182863008CDFA0 /* ZXJStudent.m */; };
+		DF6FC7C120182863008CDFA0 /* ZXJPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6FC7B520182863008CDFA0 /* ZXJPerson.m */; };
+		DF6FC7C220182863008CDFA0 /* ZXJRunTimeBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6FC7B720182863008CDFA0 /* ZXJRunTimeBaseModel.m */; };
+		DF6FC7C320182863008CDFA0 /* ZXJUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6FC7BA20182863008CDFA0 /* ZXJUserModel.m */; };
+		DF6FC7C420182863008CDFA0 /* ZXJRunTimeBaseModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6FC7BC20182863008CDFA0 /* ZXJRunTimeBaseModelOne.m */; };
+		DF6FC7C520182863008CDFA0 /* ZXJUserModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6FC7BD20182863008CDFA0 /* ZXJUserModelOne.m */; };
+		DF6FC7CB20182920008CDFA0 /* SaveArrayModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6FC7CA20182920008CDFA0 /* SaveArrayModelViewController.m */; };
+		DF6FC7CE20182994008CDFA0 /* SQSearchHotLableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6FC7CD20182994008CDFA0 /* SQSearchHotLableModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,20 +57,24 @@
 		DF0762001E5BE8B2006F3E4D /* IOSArchiveAndUnarchiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSArchiveAndUnarchiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0762041E5BE8B2006F3E4D /* IOSArchiveAndUnarchiveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSArchiveAndUnarchiveUITests.m; sourceTree = "<group>"; };
 		DF0762061E5BE8B2006F3E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF0762151E5C0DBB006F3E4D /* ZXJPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJPerson.h; sourceTree = "<group>"; };
-		DF0762161E5C0DBB006F3E4D /* ZXJPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJPerson.m; sourceTree = "<group>"; };
-		DF0762181E5C1A72006F3E4D /* ZXJStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJStudent.h; sourceTree = "<group>"; };
-		DF0762191E5C1A72006F3E4D /* ZXJStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJStudent.m; sourceTree = "<group>"; };
-		DF07621E1E5C1D56006F3E4D /* ZXJRunTimeBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJRunTimeBaseModel.h; sourceTree = "<group>"; };
-		DF07621F1E5C1D56006F3E4D /* ZXJRunTimeBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJRunTimeBaseModel.m; sourceTree = "<group>"; };
-		DF0762241E5D15F4006F3E4D /* ZXJUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJUserModel.h; sourceTree = "<group>"; };
-		DF0762251E5D15F4006F3E4D /* ZXJUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJUserModel.m; sourceTree = "<group>"; };
-		DF0762271E5FD406006F3E4D /* ZXJRunTimeBaseModelOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJRunTimeBaseModelOne.h; sourceTree = "<group>"; };
-		DF0762281E5FD406006F3E4D /* ZXJRunTimeBaseModelOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJRunTimeBaseModelOne.m; sourceTree = "<group>"; };
-		DF07622A1E5FD85C006F3E4D /* ZXJUserModelOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJUserModelOne.h; sourceTree = "<group>"; };
-		DF07622B1E5FD85C006F3E4D /* ZXJUserModelOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJUserModelOne.m; sourceTree = "<group>"; };
 		DF0762331E61B52B006F3E4D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = IOSArchiveAndUnarchive/ViewController.h; sourceTree = SOURCE_ROOT; };
 		DF0762341E61B52B006F3E4D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = IOSArchiveAndUnarchive/ViewController.m; sourceTree = SOURCE_ROOT; };
+		DF6FC7B220182863008CDFA0 /* ZXJStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJStudent.m; sourceTree = "<group>"; };
+		DF6FC7B320182863008CDFA0 /* ZXJPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJPerson.h; sourceTree = "<group>"; };
+		DF6FC7B420182863008CDFA0 /* ZXJStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJStudent.h; sourceTree = "<group>"; };
+		DF6FC7B520182863008CDFA0 /* ZXJPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJPerson.m; sourceTree = "<group>"; };
+		DF6FC7B720182863008CDFA0 /* ZXJRunTimeBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJRunTimeBaseModel.m; sourceTree = "<group>"; };
+		DF6FC7B820182863008CDFA0 /* ZXJUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJUserModel.h; sourceTree = "<group>"; };
+		DF6FC7B920182863008CDFA0 /* ZXJRunTimeBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJRunTimeBaseModel.h; sourceTree = "<group>"; };
+		DF6FC7BA20182863008CDFA0 /* ZXJUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJUserModel.m; sourceTree = "<group>"; };
+		DF6FC7BC20182863008CDFA0 /* ZXJRunTimeBaseModelOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJRunTimeBaseModelOne.m; sourceTree = "<group>"; };
+		DF6FC7BD20182863008CDFA0 /* ZXJUserModelOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJUserModelOne.m; sourceTree = "<group>"; };
+		DF6FC7BE20182863008CDFA0 /* ZXJRunTimeBaseModelOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJRunTimeBaseModelOne.h; sourceTree = "<group>"; };
+		DF6FC7BF20182863008CDFA0 /* ZXJUserModelOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJUserModelOne.h; sourceTree = "<group>"; };
+		DF6FC7C920182920008CDFA0 /* SaveArrayModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveArrayModelViewController.h; sourceTree = "<group>"; };
+		DF6FC7CA20182920008CDFA0 /* SaveArrayModelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveArrayModelViewController.m; sourceTree = "<group>"; };
+		DF6FC7CC20182994008CDFA0 /* SQSearchHotLableModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQSearchHotLableModel.h; sourceTree = "<group>"; };
+		DF6FC7CD20182994008CDFA0 /* SQSearchHotLableModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQSearchHotLableModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +125,9 @@
 		DF0761DE1E5BE8B1006F3E4D /* IOSArchiveAndUnarchive */ = {
 			isa = PBXGroup;
 			children = (
+				DF6FC7C6201828E8008CDFA0 /* SaveArrayModel(保存自定义模型数组) */,
+				DF6FC7B0201827C2008CDFA0 /* SaveSignalModel(保存单个模型) */,
 				DF0762141E5BF098006F3E4D /* Controller */,
-				DF0762131E5BF08E006F3E4D /* Model */,
 				DF0762121E5BF07B006F3E4D /* View */,
 				DF0761E21E5BE8B1006F3E4D /* AppDelegate.h */,
 				DF0761E31E5BE8B1006F3E4D /* AppDelegate.m */,
@@ -166,16 +173,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		DF0762131E5BF08E006F3E4D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DF07622F1E600FBC006F3E4D /* ModelRunTimeBaseOne */,
-				DF07622E1E600F53006F3E4D /* ModelRunTimeBaseZero */,
-				DF07622D1E600F37006F3E4D /* ModelPerson */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		DF0762141E5BF098006F3E4D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,37 +182,77 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		DF07622D1E600F37006F3E4D /* ModelPerson */ = {
+		DF6FC7B0201827C2008CDFA0 /* SaveSignalModel(保存单个模型) */ = {
 			isa = PBXGroup;
 			children = (
-				DF0762151E5C0DBB006F3E4D /* ZXJPerson.h */,
-				DF0762161E5C0DBB006F3E4D /* ZXJPerson.m */,
-				DF0762181E5C1A72006F3E4D /* ZXJStudent.h */,
-				DF0762191E5C1A72006F3E4D /* ZXJStudent.m */,
+				DF6FC7B120182863008CDFA0 /* ModelPerson */,
+				DF6FC7BB20182863008CDFA0 /* ModelRunTimeBaseOne */,
+				DF6FC7B620182863008CDFA0 /* ModelRunTimeBaseZero */,
+			);
+			path = "SaveSignalModel(保存单个模型)";
+			sourceTree = "<group>";
+		};
+		DF6FC7B120182863008CDFA0 /* ModelPerson */ = {
+			isa = PBXGroup;
+			children = (
+				DF6FC7B320182863008CDFA0 /* ZXJPerson.h */,
+				DF6FC7B520182863008CDFA0 /* ZXJPerson.m */,
+				DF6FC7B220182863008CDFA0 /* ZXJStudent.m */,
+				DF6FC7B420182863008CDFA0 /* ZXJStudent.h */,
 			);
 			name = ModelPerson;
+			path = Model/ModelPerson;
 			sourceTree = "<group>";
 		};
-		DF07622E1E600F53006F3E4D /* ModelRunTimeBaseZero */ = {
+		DF6FC7B620182863008CDFA0 /* ModelRunTimeBaseZero */ = {
 			isa = PBXGroup;
 			children = (
-				DF07621E1E5C1D56006F3E4D /* ZXJRunTimeBaseModel.h */,
-				DF07621F1E5C1D56006F3E4D /* ZXJRunTimeBaseModel.m */,
-				DF0762241E5D15F4006F3E4D /* ZXJUserModel.h */,
-				DF0762251E5D15F4006F3E4D /* ZXJUserModel.m */,
+				DF6FC7B720182863008CDFA0 /* ZXJRunTimeBaseModel.m */,
+				DF6FC7B820182863008CDFA0 /* ZXJUserModel.h */,
+				DF6FC7B920182863008CDFA0 /* ZXJRunTimeBaseModel.h */,
+				DF6FC7BA20182863008CDFA0 /* ZXJUserModel.m */,
 			);
 			name = ModelRunTimeBaseZero;
+			path = Model/ModelRunTimeBaseZero;
 			sourceTree = "<group>";
 		};
-		DF07622F1E600FBC006F3E4D /* ModelRunTimeBaseOne */ = {
+		DF6FC7BB20182863008CDFA0 /* ModelRunTimeBaseOne */ = {
 			isa = PBXGroup;
 			children = (
-				DF0762271E5FD406006F3E4D /* ZXJRunTimeBaseModelOne.h */,
-				DF0762281E5FD406006F3E4D /* ZXJRunTimeBaseModelOne.m */,
-				DF07622A1E5FD85C006F3E4D /* ZXJUserModelOne.h */,
-				DF07622B1E5FD85C006F3E4D /* ZXJUserModelOne.m */,
+				DF6FC7BF20182863008CDFA0 /* ZXJUserModelOne.h */,
+				DF6FC7BD20182863008CDFA0 /* ZXJUserModelOne.m */,
+				DF6FC7BC20182863008CDFA0 /* ZXJRunTimeBaseModelOne.m */,
+				DF6FC7BE20182863008CDFA0 /* ZXJRunTimeBaseModelOne.h */,
 			);
 			name = ModelRunTimeBaseOne;
+			path = Model/ModelRunTimeBaseOne;
+			sourceTree = "<group>";
+		};
+		DF6FC7C6201828E8008CDFA0 /* SaveArrayModel(保存自定义模型数组) */ = {
+			isa = PBXGroup;
+			children = (
+				DF6FC7C72018290D008CDFA0 /* Controller */,
+				DF6FC7C82018290D008CDFA0 /* Model */,
+			);
+			path = "SaveArrayModel(保存自定义模型数组)";
+			sourceTree = "<group>";
+		};
+		DF6FC7C72018290D008CDFA0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DF6FC7C920182920008CDFA0 /* SaveArrayModelViewController.h */,
+				DF6FC7CA20182920008CDFA0 /* SaveArrayModelViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DF6FC7C82018290D008CDFA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF6FC7CC20182994008CDFA0 /* SQSearchHotLableModel.h */,
+				DF6FC7CD20182994008CDFA0 /* SQSearchHotLableModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,15 +388,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6FC7CE20182994008CDFA0 /* SQSearchHotLableModel.m in Sources */,
+				DF6FC7C320182863008CDFA0 /* ZXJUserModel.m in Sources */,
+				DF6FC7CB20182920008CDFA0 /* SaveArrayModelViewController.m in Sources */,
+				DF6FC7C420182863008CDFA0 /* ZXJRunTimeBaseModelOne.m in Sources */,
 				DF0762351E61B52B006F3E4D /* ViewController.m in Sources */,
-				DF0762261E5D15F4006F3E4D /* ZXJUserModel.m in Sources */,
-				DF0762291E5FD406006F3E4D /* ZXJRunTimeBaseModelOne.m in Sources */,
-				DF07622C1E5FD85C006F3E4D /* ZXJUserModelOne.m in Sources */,
-				DF0762171E5C0DBB006F3E4D /* ZXJPerson.m in Sources */,
+				DF6FC7C520182863008CDFA0 /* ZXJUserModelOne.m in Sources */,
 				DF0761E41E5BE8B1006F3E4D /* AppDelegate.m in Sources */,
+				DF6FC7C020182863008CDFA0 /* ZXJStudent.m in Sources */,
 				DF0761E11E5BE8B1006F3E4D /* main.m in Sources */,
-				DF0762201E5C1D56006F3E4D /* ZXJRunTimeBaseModel.m in Sources */,
-				DF07621A1E5C1A72006F3E4D /* ZXJStudent.m in Sources */,
+				DF6FC7C220182863008CDFA0 /* ZXJRunTimeBaseModel.m in Sources */,
+				DF6FC7C120182863008CDFA0 /* ZXJPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +546,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IOSArchiveAndUnarchive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.test.IOSArchiveAndUnarchive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IOSArchiveAndUnarchive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.test.IOSArchiveAndUnarchive;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -13,6 +13,9 @@
 #import "ZXJUserModelOne.h"
 
 
+#import "SQSearchHotLableModel.h"
+#import "SaveArrayModelViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -35,10 +38,58 @@
     readBtn.backgroundColor = [UIColor orangeColor];
     [readBtn setTitle:@"读取数据" forState:UIControlStateNormal];
     [readBtn addTarget:self action:@selector(readData) forControlEvents:UIControlEventTouchUpInside];
-    
     [self.view addSubview:readBtn];
+    
+    UIButton *saveArrayBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [saveArrayBtn setFrame:CGRectMake(100, 350, 100, 50)];
+    saveArrayBtn.backgroundColor = [UIColor orangeColor];
+    [saveArrayBtn setTitle:@"保存数组" forState:UIControlStateNormal];
+    [saveArrayBtn addTarget:self action:@selector(saveArray) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:saveArrayBtn];
+
+    UIButton *readArrayBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [readArrayBtn setFrame:CGRectMake(100, 450, 100, 50)];
+    readArrayBtn.backgroundColor = [UIColor orangeColor];
+    [readArrayBtn setTitle:@"读取数组" forState:UIControlStateNormal];
+    [readArrayBtn addTarget:self action:@selector(readArray) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:readArrayBtn];
 }
 
+#pragma mark - 缓存历史记录
+- (NSString *)filePath {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    NSString *path = [paths objectAtIndex:0];
+    NSString *filename = [path stringByAppendingPathComponent:@"searchHistory.plist"];
+    
+    NSFileManager* fm = [NSFileManager defaultManager];
+    if (![fm fileExistsAtPath:filename]) {
+        [fm createFileAtPath:filename contents:nil attributes:nil];
+    }
+    return filename;
+}
+
+//TODO:保存model数组
+- (void)saveArray{
+    NSMutableArray *mutArray = [NSMutableArray array];
+    for (NSInteger i = 0; i<10; i++) {
+        SQSearchHotLableModel *model = [SQSearchHotLableModel new];
+        model.sort = [NSString stringWithFormat:@"%ld",i];
+        model.name = @"zzz";
+        model.linkUrl = @"1";
+        model.linkType = @"1";
+        [mutArray addObject:model];
+    }
+    [NSKeyedArchiver archiveRootObject:mutArray toFile:[self filePath]];
+}
+//TODO:读取model数组
+- (void)readArray{
+    NSArray *historyArray = [NSKeyedUnarchiver unarchiveObjectWithFile:[self filePath]];
+    if (historyArray.count) {
+        for (SQSearchHotLableModel *model in historyArray) {
+            NSLog(@"model.sort is %@ --model.name is %@",model.sort,model.name);
+        }
+    }
+}
 //#pragma mark - runTime写法1的归档
 //- (void)writeData{
 //    
