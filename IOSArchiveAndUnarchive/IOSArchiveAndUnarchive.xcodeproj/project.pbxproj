@@ -21,7 +21,6 @@
 		DF6FC7C320182863008CDFA0 /* ZXJUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6FC7BA20182863008CDFA0 /* ZXJUserModel.m */; };
 		DF6FC7C420182863008CDFA0 /* ZXJRunTimeBaseModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6FC7BC20182863008CDFA0 /* ZXJRunTimeBaseModelOne.m */; };
 		DF6FC7C520182863008CDFA0 /* ZXJUserModelOne.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6FC7BD20182863008CDFA0 /* ZXJUserModelOne.m */; };
-		DF6FC7CB20182920008CDFA0 /* SaveArrayModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6FC7CA20182920008CDFA0 /* SaveArrayModelViewController.m */; };
 		DF6FC7CE20182994008CDFA0 /* SQSearchHotLableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6FC7CD20182994008CDFA0 /* SQSearchHotLableModel.m */; };
 /* End PBXBuildFile section */
 
@@ -71,8 +70,6 @@
 		DF6FC7BD20182863008CDFA0 /* ZXJUserModelOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXJUserModelOne.m; sourceTree = "<group>"; };
 		DF6FC7BE20182863008CDFA0 /* ZXJRunTimeBaseModelOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJRunTimeBaseModelOne.h; sourceTree = "<group>"; };
 		DF6FC7BF20182863008CDFA0 /* ZXJUserModelOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXJUserModelOne.h; sourceTree = "<group>"; };
-		DF6FC7C920182920008CDFA0 /* SaveArrayModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveArrayModelViewController.h; sourceTree = "<group>"; };
-		DF6FC7CA20182920008CDFA0 /* SaveArrayModelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveArrayModelViewController.m; sourceTree = "<group>"; };
 		DF6FC7CC20182994008CDFA0 /* SQSearchHotLableModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQSearchHotLableModel.h; sourceTree = "<group>"; };
 		DF6FC7CD20182994008CDFA0 /* SQSearchHotLableModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQSearchHotLableModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -231,19 +228,9 @@
 		DF6FC7C6201828E8008CDFA0 /* SaveArrayModel(保存自定义模型数组) */ = {
 			isa = PBXGroup;
 			children = (
-				DF6FC7C72018290D008CDFA0 /* Controller */,
 				DF6FC7C82018290D008CDFA0 /* Model */,
 			);
 			path = "SaveArrayModel(保存自定义模型数组)";
-			sourceTree = "<group>";
-		};
-		DF6FC7C72018290D008CDFA0 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DF6FC7C920182920008CDFA0 /* SaveArrayModelViewController.h */,
-				DF6FC7CA20182920008CDFA0 /* SaveArrayModelViewController.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		DF6FC7C82018290D008CDFA0 /* Model */ = {
@@ -390,7 +377,6 @@
 			files = (
 				DF6FC7CE20182994008CDFA0 /* SQSearchHotLableModel.m in Sources */,
 				DF6FC7C320182863008CDFA0 /* ZXJUserModel.m in Sources */,
-				DF6FC7CB20182920008CDFA0 /* SaveArrayModelViewController.m in Sources */,
 				DF6FC7C420182863008CDFA0 /* ZXJRunTimeBaseModelOne.m in Sources */,
 				DF0762351E61B52B006F3E4D /* ViewController.m in Sources */,
 				DF6FC7C520182863008CDFA0 /* ZXJUserModelOne.m in Sources */,

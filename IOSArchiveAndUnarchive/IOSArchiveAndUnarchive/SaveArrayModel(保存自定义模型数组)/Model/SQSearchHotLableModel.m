@@ -24,10 +24,10 @@
 -(id)initWithCoder:(NSCoder *)aDecoder
 {
     if (self = [super init]) {
-        self.sort   = [aDecoder decodeObjectForKey:@"sort"];
-        self.name   = [aDecoder decodeObjectForKey:@"name"];
-        self.linkUrl    = [aDecoder decodeObjectForKey:@"linkUrl"];
-        self.linkType   = [aDecoder decodeObjectForKey:@"linkType"];
+        self.sort   = [NSString stringWithFormat:@"%@",[aDecoder decodeObjectForKey:@"sort"]];
+        self.name   = [NSString stringWithFormat:@"%@",[aDecoder decodeObjectForKey:@"name"]];
+        self.linkUrl    = [NSString stringWithFormat:@"%@",[aDecoder decodeObjectForKey:@"linkUrl"]];
+        self.linkType   = [NSString stringWithFormat:@"%@",[aDecoder decodeObjectForKey:@"linkType"]];
     }
     return self;
 }

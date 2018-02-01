@@ -12,9 +12,7 @@
 #import "ZXJUserModel.h"
 #import "ZXJUserModelOne.h"
 
-
 #import "SQSearchHotLableModel.h"
-#import "SaveArrayModelViewController.h"
 
 @interface ViewController ()
 
@@ -86,7 +84,7 @@
     NSArray *historyArray = [NSKeyedUnarchiver unarchiveObjectWithFile:[self filePath]];
     if (historyArray.count) {
         for (SQSearchHotLableModel *model in historyArray) {
-            NSLog(@"model.sort is %@ --model.name is %@",model.sort,model.name);
+            NSLog(@"model.sort is %@ --model.name is %@--model.linkType is %@",model.sort,model.name,model.linkType);
         }
     }
 }
